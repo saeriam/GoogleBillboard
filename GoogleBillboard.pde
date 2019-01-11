@@ -5,16 +5,16 @@ public void setup()
   String digits = e.substring(i, i+10);
   double theNum = Double.parseDouble(digits);
    if (isPrime(theNum) == true)
-     System.out.println(theNum);
+    System.out.println(theNum);
  }
+
  }
 
  
 public boolean isPrime(double theNum){
-  for (int i = 2; i <= Math.sqrt(theNum); i++)
+  for (int i = 2; i <= Math.sqrt(theNum); i++){
     if(theNum % i == 0)
-  {
-    return false;
+      return false;
   }
 return true;
 }
